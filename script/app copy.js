@@ -16,8 +16,6 @@ window.onload = function () {
 
 
 function validateForm() {
-    
-
     let nombre = document.forms["myForm"]["nombre"];
     let telefono = document.forms["myForm"]["telefono"];
     let email = document.forms["myForm"]["email"];
@@ -45,31 +43,23 @@ function validateForm() {
     
       }
 
+        
+      if(psw == " " || pswValor.length < 8){
+        alert("Debe tener al menos 8 digitos");
+        psw.focus();
+     return false;
+      }
        
-       
+      
+      if (pswrepeat !== psw){
+          alert("Por favor Reescriba el password")
+          pswrepeat.focus();
+          return false;
+      }
+
       return true
 
     }
  
 
     
-    function submitForm() {
-      let form = document.getElementById("myForm");
-      form.submit();
-  }
-
-
-  
-   //with this first line we're saying: "when the page loads (document is ready) run the following script"
-   $(document).ready(function () {
-
-    //select the POPUP FRAME and show it
-    $("#popup").hide().fadeIn(1000);
-
-    //close the POPUP if the button with id="close" is clicked
-    $("#close").on("click", function (e) {
-        e.preventDefault();
-        $("#popup").fadeOut(1000);
-    });
-
-});

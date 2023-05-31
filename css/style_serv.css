@@ -407,7 +407,7 @@ body{
         flex-direction: column;
         line-height: 3;
         text-align: center;
-        margin-right: 4rem;
+        margin-right: 3rem;
       
         
                 }
@@ -500,13 +500,17 @@ body{
         color: inherit;
    }
 
-   
+   .copyright{
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    margin-top: 2rem;}
 
 /*///////@MEDIA///////////////////////////////////////////////////////////*/
 
 
 
-    @media screen and (max-width:767px){
+    @media screen and (max-width:767px ){
         .parent {
             grid-template-columns: repeat(2, 1fr);
             background-color:#ffffff;
@@ -515,8 +519,10 @@ body{
         
    
         .rating div{
-            width: 220px;
+            
+            width: 120px;
             height: 250px;
+            margin-top: 80%;
             margin: 20px;
             flex-wrap: nowrap;
             flex:25%;
@@ -527,7 +533,11 @@ body{
            
             float: inline;
             }
-
+            .btn-laser{
+                
+                margin-top:-11REM;
+                margin-left:7REM;
+            }
         .columna{
             margin: 0 auto;
             padding: 0 auto;
@@ -538,18 +548,22 @@ body{
         }
 
         .rating img{
-            height: 5rem;
+            height: 4rem;
         }
         .rating p{
-            font-size: 2rem;
+            font-size: 12rem;
         }
         
            .head-dire{
             padding-top: 1rem;
             line-height:1.7;
-             color:rgb(255, 0, 0);
+             color:rgb(233, 223, 223);
              font-size: 1.5rem;
              margin-top: 2rem;
+          }
+          header > .navbar-brand{
+            width: 100%;
+           
           }
 
             .pedidos {
@@ -575,22 +589,29 @@ body{
             }
 
           .rating > div> span{
-              font-size: 2rem;
-              margin-left: 5rem;
-              ;
+              font-size:1.2rem;
+              margin-left: 2rem;
+              
             }
 
             .rating p{
+                margin-top: 1rem;;
                 font-size: 1.5rem;
             }
+          
+          .gmap_canvas {
+
+
           }
+        }
 
           @media screen and (max-width:407px){
           .seccion-4{
               margin-top: 10rem;
           }  
           .rating{
-              margin-top: -14rem;
+              margin-top: rem;
+              height: 5re;
           }
           .seccion-3{
               margin-top: 100rem;
@@ -605,8 +626,33 @@ body{
         
         .parent{
             grid-template-rows: 0.33fr 1fr 1fr 0.5fr 1fr;
-            background-color: #cc0303;
+            background-color: #fffefe;
+            width: 98%; 
 
     }
 
+    header {
+        
+        align-items: center;
+        width: 100%;
+        margin-left: -2rem;
+     
+      
+    }
+
+    .gmap_canvas{
+        width: 110%;
+        height: 100%;
+        margin-left: 2rem;
+    }
+     
+    .social{
+        margin-left: 2rem;
+        height: 80%;
+     }
+     .links{
+        color:#030303;
+        margin-left: 3rem;
+        width: 30rem;
+     }
 }
